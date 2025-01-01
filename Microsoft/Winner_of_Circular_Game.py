@@ -13,7 +13,7 @@ class Solution(object):
             for i in range(k-1):
                 num = q.popleft()
                 q.append(num)
-            q.popleft()
+            q.popleft() #At kth element we remove it from the game
             
         return q[0]
         
